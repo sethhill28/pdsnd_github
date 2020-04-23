@@ -36,7 +36,7 @@ def get_filters():
         (str) day - name of the day of week to filter by, or "all" to apply no day filter
     """
     print('Hello! Let\'s explore some US bikeshare data!')
-    # get user input for city (chicago, new york city, washington). HINT: Use a while loop to handle invalid inputs
+    # get user input for city (chicago, new york city, washington)
     try:
         city = input('Would you like to analyze data from Chicago, New York City, or Washington?').lower()
         while city not in CITY_DATA:
@@ -185,6 +185,7 @@ def trip_duration_stats(df, city):
         print('the total travel time was:', total_time_delta)
     except Exception as e:
         print('Error occurred, could not calculate the total travel time of users: {}'.format(e))
+
     # display mean travel time
     try:
         total_mean = df['Time Delta'].mean()
@@ -207,11 +208,13 @@ def user_stats(df,city):
         print('The amount and type of users in', city, 'are as followed:\n', df['User Type'].value_counts())
     except Exception as e:
         print('No data available: {}'.format(e))
+
         # Display counts of gender
     try:
         print('The amount and gender of users in', city, 'are as followed:\n',df['Gender'].value_counts())
     except Exception as e:
         print('No data available: {}'.format(e))
+        
          # Display earliest, most recent, and most common year of birth
     try:
         earliest_year = df['Birth Year'].min()
