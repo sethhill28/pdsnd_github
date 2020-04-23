@@ -230,9 +230,9 @@ def display_data(df):
     start = 0
     end = 5
 
-    display_active = input("Do you want to see the raw data?: ").lower()
+    display = input("Do you want to see the raw data?: ").lower()
 
-    if display_active == 'yes':
+    if display == 'yes':
         while end <= df.shape[0] - 1:
 
             print(df.iloc[start:end,:])
