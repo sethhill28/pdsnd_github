@@ -11,7 +11,9 @@ Calculates bike sharing statistics from three cities based off user input using 
   - Trip duration (total and average travel time)
   - User info (counts of each user type and gender, earliest birth year, most recent birth year, and most common birth year)
 ### Files used
-Include the files used
+chicago.csv
+new_york_city.csv
+washington.csv
 
 ### Credits
 It's important to give proper credit. Add links to any repo that inspired you or blogposts you consulted.
